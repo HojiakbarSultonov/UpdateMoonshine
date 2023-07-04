@@ -10,4 +10,11 @@ class Article extends Model
     use HasFactory;
 
 
+protected $casts = [
+    'Files' => 'collection',
+    'Data'=>'collection',
+    'active'=>'bool'
+]   ;
+
 }
+
